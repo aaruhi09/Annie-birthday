@@ -6,9 +6,9 @@
     <title>HBD ANANYA! 🪩✨</title>
     <style>
         body {
-            background-color: #121212; /* Dark aesthetic background */
-            color: #e0dcd3; /* Vintage off-white text */
-            font-family: 'Courier New', Courier, monospace; /* Typewriter font */
+            background-color: #121212; 
+            color: #e0dcd3; 
+            font-family: 'Courier New', Courier, monospace; 
             text-align: center;
             padding: 40px 20px;
             margin: 0;
@@ -26,6 +26,21 @@
             font-size: 0.9rem;
             margin-bottom: 40px;
         }
+        /* Custom Card Styling */
+        .custom-card-container {
+            max-width: 450px;
+            margin: 0 auto 50px auto;
+            padding: 10px;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+        .custom-card-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -35,7 +50,7 @@
             margin: 0 auto;
         }
         .polaroid {
-            background: #fffdf9; /* Crisp white polaroid frame */
+            background: #fffdf9; 
             padding: 12px 12px 25px 12px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
             border-radius: 4px;
@@ -53,12 +68,12 @@
             width: 100%;
             height: 240px;
             object-fit: cover;
-            filter: grayscale(0.2) contrast(1.1); /* Cinematic aesthetic filter */
+            filter: grayscale(0.2) contrast(1.1); 
         }
         .caption {
             margin-top: 12px;
             font-size: 0.95rem;
-            color: #222; /* Dark ink text for polaroid */
+            color: #222; 
             font-weight: bold;
         }
         .message-box {
@@ -78,8 +93,13 @@
             border-bottom: 1px dashed #444;
             padding-bottom: 8px;
         }
-        .heart {
-            color: #ff4d4d;
+        .music-player {
+            margin-top: 40px;
+            background: #1a1a1a;
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: 1px solid #333;
         }
     </style>
 </head>
@@ -87,6 +107,11 @@
 
     <h1>happy birthday, annie! 🪩✨</h1>
     <p class="subtitle">a tiny digital archive of our absolute favorite vibes...</p>
+
+    <!-- YOUR DESIGNED CARD APPEARS HERE -->
+    <div class="custom-card-container">
+        <img src="card.jpg" alt="Special Birthday Card For Annie">
+    </div>
 
     <!-- Polaroid Gallery -->
     <div class="gallery">
@@ -108,7 +133,13 @@
     <div class="message-box">
         <h3>To Ananya, 💌</h3>
         <p>Happy birthday to the person who always passes the vibe check! 😭 honestly, I'm so incredibly happy we became close friends.</p>
-        <p>Thank you for bringing absolute <b>main character energy</b> to my life and for always matching my energy. Hope your day is as iconic and lovely as you are, Annie! Have the best time! <span class="heart">🎈🍰</span></p>
+        <p>Thank you for bringing absolute <b>main character energy</b> to my life and for always matching my energy. Hope your day is as iconic and lovely as you are, Annie! Have the best time! 🎉🍰</p>
+    </div>
+
+    <!-- BACKGROUND SONG PLAYER -->
+    <div class="music-player">
+        <p style="margin: 0 0 10px 0; font-size: 0.85rem; color: #a0988a;">🎵 Press play for the birthday vibe:</p>
+        <audio src="song.mp3" controls loop></audio>
     </div>
 
 </body>
